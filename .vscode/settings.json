@@ -1,0 +1,11 @@
+{
+    "workbench.editor.enablePreviewFromCodeNavigation": false,
+    "workbench.editor.showTabs": true,
+    "workbench.editor.splitInGroupLayout": "horizontal",
+    "json.schemas": [],
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    }
+}

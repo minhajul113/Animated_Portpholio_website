@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Protfolio Website</title>
+    <!-- light Box 2 -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- BOX Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor1"></div>
+
+    <!-- Nav Section start-->
+    <header class="header container">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about" style="--i:1;">About</a>
+            <a href="#service" style="--i:2;">Serivces</a>
+            <a href="#portfolio" style="--i:3;">Portfolio</a>
+            <a href="#contact" style="--i:4;">Contact</a>
+        </nav>
+        <button class="navbar-toggler text-white fs-2"><i class='bx bx-menu'></i></button>
+    </header>
+    <!-- Nav section end-->
+
+    <!-- Hero/Home Section start-->
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello Its me</h3>
+            <h1>Md Minhajul Islam</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis cum aut, molestias
+                deserunt ea.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/minhajul1040" target="_blank" style="--i:7"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:5"><i class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:6"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn down-btn" style="--i:8;">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/portfolio.png" class="img-fluid" alt="portfolio">
+        </div>
+    </section>
+    <!-- Hero/Home Section end-->
+
+    <!-- About Section start-->
+    <section class="about container" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_text">
+                        <h3 class="section_subtitle">Get To Know Me</h3>
+                        <p>
+                            I am a Frontend Web Developer and Graphics Designer Designing Websites and Developing Web
+                            Application That triggers the success of the overall product. Check out some of my works in
+                            the
+                            Project Section.
+                        </p>
+                        <p>
+                            I also like to sharing content related to the stuff that I have learned over years in Web
+                            Development so it can help other people of the Developer Community. Feel free to Connect or
+                            Follow
+                            me on my Linkedin where I post useful content related to Web Development and Graphics
+                            Designing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="container skill">
+                        <h3 class="section_subtitle">My Skills</h3>
+                        <ul>
+                            <li>
+                                <h4>HTML</h4>
+                                <span class="bar"><span class="html"></span></span>
+                            </li>
+                            <li>
+                                <h4>CSS</h4>
+                                <span class="bar"><span class="css"></span></span>
+                            </li>
+                            <li>
+                                <h4>Javascript</h4>
+                                <span class="bar"><span class="javascript"></span></span>
+                            </li>
+                            <li>
+                                <h4>Bootstrap</h4>
+                                <span class="bar"><span class="bootstrap"></span></span>
+                            </li>
+                            <li>
+                                <h4>Jquery</h4>
+                                <span class="bar"><span class="jquery"></span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end-->
+
+    <!-- Services Section Strat-->
+    <section class="services pb-3" id="service">
+        <h2 class="section-title text-center mb-5">Serevices</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-block d-lg-flex">
+                    <div class="features-col mb-3 text-center">
+                        <i class="bx bxl-html5 fs-1"></i>
+                        <h5 class="fw-bold">PSD To HTML</h5>
+                        <p class="small">Convert PSD To HTML. I can also Convert Figma, PDF, Abobe illustrator, jpg to
+                            HTML. All Conversion will be pixel perfect</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-col mb-3 text-center">
+                        <i class="bx bx-code-block fs-1"></i>
+                        <h5 class="fw-bold">Frontend Developer</h5>
+                        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit
+                            consequuntur perferendis facere.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="features-col mb-3 text-center">
+                        <i class="bx bx-palette fs-1"></i>
+                        <h5 class="fw-bold">Graphics Designer</h5>
+                        <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eaque aliquid
+                            id perferendis deserunt pariatur!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section end-->
+
+    <!-- Portfolio Section start-->
+    <section class="portfolio pb-4" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
+                <div class="col-sm-12 col-lg-4 mb-3">
+                    <a href="img/project1.png" data-lightbox="models" data-title="Project 1">
+                        <img src="img/project1-prev.jpg" class="img-fluid rounded-3">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-lg-4 mb-3">
+                    <a href="img/project2.jpg" data-lightbox="models" data-title="Project 2">
+                        <img src="img/project2-prev.jpg" class="img-fluid rounded-3">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-lg-4 mb-3">
+                    <a href="img/project3.jpg" data-lightbox="models" data-title="Project 2">
+                        <img src="img/project3-prev.jpg" class="img-fluid rounded-3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section end-->
+
+    <!-- Contact Form Start -->
+    <section class="contact pb-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <div class="col-12">
+                    <form action="mailto:migamerbd2@gmail.com" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Enter Your Name</label>
+                            <input type="text" class="form-control bg-dark text-white inpt-ouline" id="Name" name="Name"
+                                placeholder="Enter Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email address</label>
+                            <input type="email" class="form-control bg-dark text-white inpt-ouline" id="Email" name="Email"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea class="form-control bg-dark text-white inpt-ouline" id="Message" name="Message"
+                                rows="3" placeholder="Enter Your Message Here"></textarea>
+                        </div>
+                        <input type="submit" class="btn send-btn me-3" value="Send">
+                        <input type="reset" class="btn send-btn" value="Reset">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form End -->
+
+    <!-- Footer Start -->
+    <footer class="footer pt-5">
+        <div class="container text-center">
+            <p>© Copyright 2023 | Md Minhajul Islam</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
