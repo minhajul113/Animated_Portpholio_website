@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: #131316;
+            color: #fff;
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+
+        .hidden {
+            opacity: 0;
+            /* filter: blur(5px); */
+            transform: translateX(100px);
+            transition: 0.8s;
+
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hidden">
+        <h1>This is heading</h1>
+        <p>This is my website</p>
+    </section>
+
+    <section class="hidden">
+        <h1>This heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus quisquam fugiat numquam doloremque
+            earum odit. Explicabo quasi enim, tempore vero dolorem minima fugiat alias temporibus similique quam vitae
+            reiciendis.</p>
+    </section>
+
+    <section class="hidden">
+        <h1>Buy The product</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus quisquam fugiat numquam doloremque
+            earum odit. Explicabo quasi enim, tempore vero dolorem minima fugiat alias temporibus similique quam vitae
+            reiciendis.</p>
+    </section>
+
+
+    <section class="hidden">
+        <h1>This is really good</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus quisquam fugiat numquam doloremque
+            earum odit. Explicabo quasi enim, tempore vero dolorem minima fugiat alias temporibus similique quam vitae
+            reiciendis.</p>
+    </section>
+
+
+    <script>
+        // Scroll Animation
+        const hidden = document.querySelectorAll(".hidden");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+                if (entry.isIntersecting) observer.unobserve(entry.target)
+            })
+        },
+        {
+          threshold: 0.5,  
+        }
+        )
+
+
+        hidden.forEach(hide => {
+            observer.observe(hide)
+
+        })
+
+    </script>
+
+</body>
+
+</html>

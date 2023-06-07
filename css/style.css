@@ -9,6 +9,7 @@ body{
     background: #1f242d;
     color: #fff;
     cursor: pointer;
+    /* overflow-x: hidden; */
 }
 
 html{
@@ -44,6 +45,24 @@ html{
 }
 
 /* Cursor Animation End */ 
+
+/* Scroll Animation start */
+.hidden {
+    opacity: 0;
+    /* filter: blur(5px); */
+    transform: translateX(-200px);
+    transition: all 0.3s;
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+/* Scroll Animation End*/
 
 /* Nav Section start */
 .header{
