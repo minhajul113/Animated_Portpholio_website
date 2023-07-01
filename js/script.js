@@ -26,3 +26,5 @@ toggleBtn.addEventListener("click", ()=>{
     navbar.classList.toggle("nav-toggle");
     toggleBtnIcon.classList.toggle("bx-menu-alt-right");
 })
+
+
