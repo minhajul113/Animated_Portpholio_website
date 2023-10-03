@@ -1,23 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: poppins, sans-serif;
 }
 
-body{
+body {
     background: #1f242d;
     color: #fff;
     cursor: pointer;
     /* overflow-x: hidden; */
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-/* Cursor Animation Start */ 
-.cursor{
+/* Cursor Animation Start */
+.cursor {
     position: fixed;
     left: 0;
     top: 0;
@@ -30,7 +30,8 @@ html{
     z-index: 99999999;
     transition: 0.1s
 }
-.cursor1{
+
+.cursor1 {
     position: fixed;
     left: 0;
     top: 0;
@@ -44,12 +45,13 @@ html{
     transition: 0.15s
 }
 
-/* Cursor Animation End */ 
+/* Cursor Animation End */
 
 /* Scroll Animation start */
+
 .hidden {
     opacity: 0;
-    /* filter: blur(5px); */
+    /* filter: blur(5px);  */
     transform: translateX(-200px);
     transition: all 0.3s;
 
@@ -62,10 +64,11 @@ html{
 }
 
 
+
 /* Scroll Animation End*/
 
 /* Nav Section start */
-.header{
+.header {
     position: relative;
     top: 0;
     left: 0;
@@ -78,7 +81,7 @@ html{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: #fff;
     text-decoration: none;
@@ -91,11 +94,11 @@ html{
     transition: all 0.3s;
 }
 
-.navbar{
-    margin-right: -130px;
+.navbar {
+    margin-right: -50px;
 }
 
-.navbar a{
+.navbar a {
     display: inline-block;
     font-size: 18px;
     color: #fff;
@@ -110,24 +113,26 @@ html{
     animation-delay: calc(0.2s * var(--i));
 }
 
-.navbar a:hover, .logo:hover{
+.navbar a:hover,
+.logo:hover {
     color: #0ef;
-    background-color: #353b48;    
+    background-color: #353b48;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     outline: none;
     border: none;
     box-shadow: none;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     display: none;
 }
 
 /* Nav Section End */
 
 /* Hero Section Start */
-.home{
+.home {
     position: relative;
     width: 100%;
     display: flex;
@@ -136,24 +141,24 @@ html{
     padding: 70px 10% 0;
 }
 
-.home .home-content h3:nth-of-type(2){
+.home .home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: 0.7s;
 }
 
-.home .home-content{
+.home .home-content {
     max-width: 600px;
 }
 
-.home-content p{
+.home-content p {
     font-size: 15px;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     font-weight: 300;
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -162,7 +167,7 @@ html{
     animation-delay: 0.7s;
 }
 
-.home .home-content h3{
+.home .home-content h3 {
     font-size: 32px;
     font-weight: 700;
     opacity: 0;
@@ -170,11 +175,11 @@ html{
     animation-delay: 0.7s;
 }
 
-.home .home-content h3 span{
+.home .home-content h3 span {
     color: #0ef;
 }
 
-.home-img img{
+.home-img img {
     max-width: 450px;
     margin-right: -20px;
     opacity: 0;
@@ -183,7 +188,7 @@ html{
     overflow-x: hidden;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     width: 40px;
     height: 40px;
@@ -202,13 +207,13 @@ html{
     animation-delay: calc(0.2s * var(--i));
 }
 
-.social-media a:hover{
-    background-color:#0ef;
+.social-media a:hover {
+    background-color: #0ef;
     color: #333;
     box-shadow: 0 0 20px #0ef;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 12px 28px;
     background: #0ef;
@@ -224,71 +229,79 @@ html{
     animation-delay: 0.7s;
 }
 
-.btn:hover{
+.btn:hover {
     color: #0ef;
     background: #444;
     box-shadow: 0 0 10px #444;
 }
+
 /* Hero Section End */
 
 
 /* After Load Keyframes Animation */
-@keyframes slideRight{
-    0%{
+@keyframes slideRight {
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
-@keyframes slideLeft{
-    0%{
+
+@keyframes slideLeft {
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
-@keyframes slideTop{
-    0%{
-        transform:translateY(100px);
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
         opacity: 0;
     }
-    100%{
-        transform:translateY(0);
+
+    100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes slideBottom{
-    0%{
-        transform:translateY(-100px);
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
         opacity: 0;
     }
-    100%{
-        transform:translateY(0);
+
+    100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }
-@keyframes zoomIn{
-    0%{
-        transform:scale(0);
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
         opacity: 0;
     }
-    100%{
-        transform:scale(1);
+
+    100% {
+        transform: scale(1);
         opacity: 1;
     }
 }
 
 
 /* About Section Start */
-.about{
+.about {
     position: relative;
     width: 100%;
     /* height: 70vh; */
@@ -299,7 +312,7 @@ html{
     padding-top: -2rem;
 }
 
-.section-title{
+.section-title {
     padding-top: 10rem;
     margin-bottom: 4rem;
     text-transform: uppercase;
@@ -308,14 +321,14 @@ html{
     letter-spacing: 1px;
 }
 
-.section_subtitle{
+.section_subtitle {
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.5px;
     margin-bottom: 30px;
 }
 
-.about .about_text p{
+.about .about_text p {
     margin-bottom: 10px;
     width: 100%;
     font-weight: 300;
@@ -325,124 +338,139 @@ html{
 
 }
 
-.about .skill ul{
+.about .skill ul {
     width: 500px;
     margin: 20px auto;
     padding: 50px;
-    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 14px 28px rgba(0,0,0, 0.25);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 
-.about .skill ul li{
+.about .skill ul li {
     margin: 20px 0;
     padding: 5px;
     list-style: none;
 }
 
-.bar{
+.bar {
     background: #353b48;
     display: block;
     height: 20px;
-    border: 1px solid rgba(0,0,0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.bar:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22);
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.bar span{
+.bar span {
     height: 20px;
     float: left;
-    background: linear-gradient(135deg,rgba(236, 0, 140, 1)0%, rgba(252, 103,103,1)100%);
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
 }
 
-.html{
+.html {
     width: 90%;
     animation: html 1s;
 }
-.css{
+
+.css {
     width: 80%;
     animation: css 2s;
 }
-.javascript{
+
+.javascript {
     width: 70%;
     animation: javascript 3s;
 }
-.bootstrap{
+
+.bootstrap {
     width: 85%;
     animation: bootstrap 3s;
 }
-.jquery{
+
+.jquery {
     width: 75%;
     animation: jquery 4s;
 }
 
-@keyframes html{
-    0%{
+@keyframes html {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 90%;
     }
 }
-@keyframes css{
-    0%{
+
+@keyframes css {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 80%;
     }
 }
-@keyframes javascript{
-    0%{
+
+@keyframes javascript {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 70%;
     }
 }
-@keyframes bootstrap{
-    0%{
+
+@keyframes bootstrap {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 85%;
     }
 }
-@keyframes jquery{
-    0%{
+
+@keyframes jquery {
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 75%;
     }
 }
+
 /* About Section End */
 
 /* Services section start */
-.features-col{
+.features-col {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
     transition: all ease-in-out 0.3s;
 }
 
-.features-col:hover{
+.features-col:hover {
     transform: scale(1.08);
-    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 14px 28px rgba(0,0,0, 0.25);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 14px 28px rgba(0, 0, 0, 0.25);
     background-color: #333;
 }
+
 /* Services section end */
 
 /* Contact Form Start*/
-.contact textarea{
+.contact textarea {
     resize: none;
 }
 
-.contact .inpt-ouline:focus{
+.contact .inpt-ouline:focus {
     outline: none !important;
     box-shadow: none;
 }
